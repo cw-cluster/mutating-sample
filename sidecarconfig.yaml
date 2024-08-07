@@ -1,0 +1,12 @@
+containers:
+- name: sidecar-nginx
+  volumeMounts:
+  - mountPath: /opt/whatap
+    name: whatap
+  image: nginx:1.12.2
+  command:
+  - echo
+  - 'TEST POD INJECT'
+# volumes:
+# - name: whatap
+#   emptyDir: {}
